@@ -146,6 +146,7 @@ void STARTGAME() {
     char AskNewGame = 'Y';
     do
     {
+        system("cls");
         strGameInfo GameInfo = PlayGame(HowManyRounds());
         cout << "do you wanna paly another game\n";
         cin >> AskNewGame;
@@ -157,4 +158,5 @@ int main()
     srand((unsigned)time(NULL));
     STARTGAME();
 }
+
 
